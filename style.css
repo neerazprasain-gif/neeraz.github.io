@@ -1,0 +1,260 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #0f0f1a;
+  color: #e0e0e0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c2b;
+  padding: 15px 30px;
+  border-bottom: 2px solid #5865F2;
+  box-shadow: 0 0 15px #5865F2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 8px #5865F2);
+}
+
+nav a {
+  color: #e0e0e0;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+  color: #5865F2;
+  text-shadow: 0 0 8px #5865F2;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  color: #5865F2;
+  text-shadow: 0 0 15px #5865F2;
+}
+
+.hero button {
+  background: #5865F2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #5865F2;
+}
+
+.hero button:hover {
+  background: #4752c4;
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #5865F2;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background: #1c1c2b;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #5865F2;
+  box-shadow: 0 0 15px #5865F2;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background: #1c1c2b;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #5865F2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+  color: #5865F2;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px #5865F2;
+}
+
+.project-card p {
+  color: #e0e0e0;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #5865F2;
+}
+.discord-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #5865F2;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #5865F2;
+}
+
+.discord-btn img {
+  height: 24px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 6px white);
+}
+
+.discord-btn:hover {
+  background: #4752c4;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #5865F2;
+}
+/* Default Dark Mode */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #0f0f1a;
+  color: #e0e0e0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c2b;
+  padding: 15px 30px;
+  border-bottom: 2px solid #5865F2;
+  box-shadow: 0 0 15px #5865F2;
+  transition: background 0.3s ease;
+}
+
+body.light-mode header {
+  background: #ffffff;
+  border-bottom: 2px solid #5865F2;
+  box-shadow: none;
+}
+
+/* Default: Dark Mode */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #0f0f1a;       /* deep navy */
+  color: #e0e0e0;            /* light gray text */
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+header {
+  background: #1c1c2b;       /* dark slate */
+  border-bottom: 2px solid #5865F2; /* Discord purple accent */
+  box-shadow: 0 0 15px #5865F2;
+}
+
+.hero h2 {
+  color: #5865F2;
+  text-shadow: 0 0 15px #5865F2;
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #fdfdfd;       /* clean white */
+  color: #222;               /* dark text */
+}
+
+body.light-mode header {
+  background: #ffffff;       /* pure white header */
+  border-bottom: 2px solid #5865F2;
+  box-shadow: 0 0 10px rgba(88,101,242,0.4);
+}
+
+body.light-mode .hero h2 {
+  color: #333;
+  text-shadow: 0 0 10px rgba(88,101,242,0.3);
+}
+
+/* Default Dark Mode */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #0f0f1a;       /* dark navy */
+  color: #e0e0e0;            /* light gray text */
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c2b;
+  padding: 15px 30px;
+  border-bottom: 2px solid #5865F2;
+  box-shadow: 0 0 15px #5865F2;
+}
+
+.hero h2 {
+  color: #5865F2;
+  text-shadow: 0 0 15px #5865F2;
+}
+
+ .sidebar h4 {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.sidebar li {
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover {
+  background: #5865F2;
+}
+
+.role-admin {
+  color: #ff4d4d; /* red */
+  font-weight: bold;
+}
+
+.role-moderator {
+  color: #4da6ff; /* blue */
+  font-weight: bold;
+}
+
+.role-member {
+  color: #ccc; /* gray */
+}
